@@ -28,9 +28,10 @@ import logMediatorTests from './mediatorTests/log.spec';
 import cacheMediatorTests from './mediatorTests/cache.spec';
 import throttleMediatorTests from './mediatorTests/throttle.spec';
 import callSequenceMediatorTests from './mediatorTests/callSequence.spec';
+import validateMediatorTests from './mediatorTests/validate.spec';
+import dbReportMediatorTests from './mediatorTests/dbReport.spec';
 import overviewPageTests from './overviewPageTests/projectSettingPage.spec';
 import openEntryPointArtifact from './overviewPageTests/openEntryPointArtifact.spec';
-import validateMediatorTests from './mediatorTests/validate.spec';
 import multiWorkspaceTests from './multiWorkspaceTests/multiWorkspace.spec';
 import unitTestSuitTests from './unitTestSuite.spec';
 import { page } from './Utils';
@@ -62,6 +63,7 @@ test.describe(throttleMediatorTests);
 test.describe(callSequenceMediatorTests);
 test.describe(validateMediatorTests);
 test.describe(unitTestSuitTests);
+test.describe(dbReportMediatorTests);
 test.describe(artifact430Tests);
 
 test.afterAll(async () => {
